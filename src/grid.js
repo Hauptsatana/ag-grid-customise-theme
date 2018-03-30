@@ -1,4 +1,8 @@
+// Import default ag-grid styles
+require("ag-grid/src/styles/ag-grid.scss");
+
 require('./styles.scss');
+
 var Grid = require('ag-grid').Grid;
 require('ag-grid-enterprise');
 
@@ -34,6 +38,9 @@ var gridOptions = {
     enableFilter: true,
     enableStatusBar: true,
     enableRangeSelection: true,
+
+    suppressMenuHide: true,
+    enableColResize: true,
 
     columnDefs: columnDefs,
     rowData: rowData

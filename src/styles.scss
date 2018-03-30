@@ -1,7 +1,3 @@
-// Customize the look and feel of the grid with Sass variables
-// Up-to-date list of variables is available in the source code: https://github.com/ag-grid/ag-grid/blob/latest/src/styles/theme-fresh.scss 
-$icons-path: "~ag-grid/src/styles/icons/";
-
 // changes the border color
 // $border-color: #FF0000;
 
@@ -12,11 +8,12 @@ $icons-path: "~ag-grid/src/styles/icons/";
 // $font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
 // Reverts the cell horizontal padding change between ag-fresh and ag-theme-fresh
-$cell-horizontal-padding: 2px;
+$cell-horizontal-padding: 20px;
 
 // changes the icon color
 // $icon-color: red;
 // $primary-color: green;
 
-@import '~ag-grid/src/styles/ag-grid.scss';
-@import '~ag-grid/src/styles/ag-theme-fresh.scss';
+// To use balham-icons $icons-path MUST be set WITHOUT ag-grid.scss imported in same file
+$icons-path: "~ag-grid/src/styles/balham-icons/";
+@import '~ag-grid/src/styles/ag-theme-balham.scss';
